@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+            margin:auto;
+        }
+        /*static dan relativ*/
+        .satu{
+            background-color:lightgreen;
+            position:static;
+        }
+        .dua{
+            background-color:blueviolet;
+            position:relative; /*mengangkat satu dimensi keatas*/
+            top:30px;
+            right:-30px;
+        }   
+        .tiga{
+            background-color: brown;
+        }
+        /*Absolute dan Fixed*/
+        .container{
+            width:600px;
+            height:650px;
+            border:3px solid green;
+            position:relative
+        }
+        .empat{
+            background-color:rgb(245, 233, 14);
+            position: static;
+        }
+        /*fixed*/
+        .lima{
+            background-color:rgb(8, 249, 113);
+            position:fixed;/*selalu diatas dan mengikuti scroling*/
+            top:0px;
+            left:0;
+        }
+        /*absolut*/
+        .enam{
+            background-color: rgb(10, 22, 243);
+            position:absolute;/*mengangkat satu dimensi keatas dan mengisi satu kotak sebelumnya(ruang yang ditempati dianggap tidak ada*/
+            right:0;
+            bottom:0;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <!-- css position memungkinkan kita untuk menggeser sebuah elemen display blox agar tidak memengaruhi elemen lain disekitarnya,memiliki value sbg beriikut:static,relative,absolute,fixed -->
+    <div class="satu"></div>
+    <div class="dua"></div>
+    <div class="tiga"></div>
+    <br><br><br>
+    <div class="container">
+        <div class="empat">static</div>
+        <div class="lima">fixed</div>
+        <div class="enam">absolut</div>
+    </div>
+    
+</body>
+</html>

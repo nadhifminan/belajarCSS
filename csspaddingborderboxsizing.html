@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>padding border dan box sizing</title>
+    <style>
+        /*page 4.css reset-->meyerweb*/
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+           v2.0 | 20110126
+           License: none (public domain)
+        */
+
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+        	margin: 0;
+        	padding: 0;
+        	border: 0;
+        	font-size: 100%;
+        	font: inherit;
+        	vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+        	display: block;
+        }
+        body {
+        	line-height: 1;
+        }
+        ol, ul {
+        	list-style: none;
+        }
+        blockquote, q {
+        	quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+        	content: '';
+        	content: none;
+        }
+        table {
+        	border-collapse: collapse;
+        	border-spacing: 0;
+        }
+        /*stop reset disini*/
+        div.satu{
+            width:300px;
+            height:300px;
+            background-color:rgb(4, 4, 247);
+            margin:20px auto;
+            color:white;
+            /*padding=space kata dengan blok*/
+            padding:30px 20px 25px 60px;
+            overflow: auto;
+            /*1 untuk tampilan border
+            border-width:2px;
+            border-style:solid;
+            border-color:red
+
+            2.untuk garis yang hanya satu sisi
+            border-left:10px;
+            */
+            border:5px dotted red;/*solid,dotted,dashed,double*/
+            
+        } 
+        div.sizing1{
+            background-color: aquamarine;
+            width:50%;
+            padding:10px;
+            margin: 30px auto;
+            border:2px solid darkorange;
+        }
+        div.sizing2 {
+            background-color:royalblue;
+            width:50%;
+            padding:20px;
+            margin:30px auto;
+            border:6px dotted lightpink;
+        }
+        .contohReset{
+            background-color:darkorange;
+            width:300px;
+            height:250px;
+
+        }
+        /*3.box-sizing digunakan untuk menyamakan semua ukuran box model(width) dgn syarat mwnghapus semua width
+        div{
+           box-sizing:border-box
+        }
+        */
+
+        /*css reseet*/
+        
+    </style>
+</head>
+<body>
+    <div class="satu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolor tempore doloremque quam, aliquam quia? Sapiente, eligendi non doloremque illo, incidunt facere neque voluptatem natus odio, dolore consectetur molestias eaque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsam corrupti doloribus repellendus delectus eos omnis repellat, totam ea consectetur ex, molestias quo! Blanditiis recusandae esse dolor pariatur culpa vitae?
+    </div>
+    <div class="sizing1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate illo fuga nobis quo, soluta exercitationem autem ipsum voluptas aut ipsa dolores. Veritatis odio blanditiis eius ipsum, distinctio quaerat vero sint.
+    </div>
+    <div class="sizing2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, assumenda. Nesciunt incidunt commodi, cum perferendis itaque neque tenetur temporibus dolore earum laudantium quia expedita nulla, nobis praesentium reprehenderit sunt sequi?</div>
+    <div class="contohReset">Ini adalah contoh dari reset ,Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iure, nihil placeat quisquam natus culpa, facilis ipsam laboriosam quibusdam, consequatur est et qui vel ea amet eius corrupti voluptates tempora.</div>
+</body>
+</html>

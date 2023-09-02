@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        .container{
+            width:600px;
+            border:1px solid black;
+            margin:auto;
+            padding:5px;
+        }
+        .satu,.dua,.tiga{
+            width:150px;
+            height:50px;
+        }
+        .satu{
+            background-color: orange;
+        }
+        .dua{
+            background-color: blue;
+            float:right;
+        }
+        .tiga{
+            background-color: green;
+        }
+        /*kegunaan float contoh teks mengelilingi gambar*/
+        .kontainer{
+            border:2px groove red;
+            width:500px;
+            margin:auto;
+            padding:5px;
+        }
+        img{
+            float:left;
+            margin:2px 20px 2px 2px;
+            padding:10px;
+        }
+        .kontainer1{
+            width:80px;
+            height:80px;
+            color:aliceblue;
+            background-color: aquamarine;
+        }
+        /*kotaknyaFloat*/
+        .kotaknyaFloat{
+            border:2px groove blue;
+            width:500px;
+            margin:auto;
+            margin-top:10px;
+            padding:5px;
+            
+        }
+        .kontainer1{
+            width:80px;
+            height:80px;
+            color:aliceblue;
+            background-color: aquamarine;
+            text-align: center;
+            line-height: 80px;
+            font-size:30px;
+            margin:2px;
+            float:left;
+        }
+        /* float digunakan untuk menghilangkan kenormalan posisi display */
+        .clear{
+            clear:left;
+        }
+        .ggg{
+            width:700px;
+            
+        }
+        .kiri{
+            width:300px;
+            height:500px;
+            background-color: salmon;
+            float:left;
+            padding:10px;
+        }
+        .tengah{
+            width:400px;
+            height:500px;
+            background-color:blueviolet;
+            float:right;
+            padding:10px;
+        }
+        .kanan{
+            width:300px;
+            height:500px;
+            background-color:greenyellow;
+            float:left;
+            padding:10px;
+            /*box-sizing: border-box;*/
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="satu"></div>
+        <div class="dua"></div>
+        <div class="tiga"></div>
+    </div>
+
+    <div class="kontainer">
+        <img src="/logoutm.png" alt="maaf gambar rusak">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis velit, accusantium assumenda sunt porro asperiores autem modi optio mollitia maiores reprehenderit in itaque ea labore quam veritatis earum inventore molestias culpa consectetur? Sit quod iusto aliquam saepe odit in, deleniti iste facere voluptas illum voluptatibus dolores quibusdam blanditiis nemo corporis, laborum ipsam accusamus facilis, quidem assumenda vero impedit. Provident neque esse ipsam modi maxime veritatis commodi illum, magnam eum! Minus doloribus rerum reiciendis hic maxime aperiam fugit pariatur earum explicabo provident saepe quasi veniam quaerat iure minima, asperiores expedita praesentium! Labore quos quibusdam eos at provident nam suscipit veritatis quia!</p>
+    </div>
+    <!-- membuat image didalam bentuk -->
+    <div class="kotaknyaFloat">
+        <div class="kontainer1">1</div>
+        <div class="kontainer1">2</div>
+        <div class="kontainer1">3</div>
+        <div class="kontainer1">4</div>
+        <div class="kontainer1">5</div>
+        <div class="clear"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsum nisi id itaque aut ipsa non. Quibusdam, rerum? Magnam, magni. Culpa error delectus tenetur iure cupiditate ipsa placeat veniam. Distinctio debitis tempore molestiae quod reprehenderit officia, enim nisi, eligendi temporibus similique doloremque eum sunt sequi, perspiciatis quia facilis labore quas eos. Inventore temporibus tempora nemo atque eos reiciendis est neque laboriosam. Fugit ipsam eaque deleniti eum impedit possimus ex distinctio molestias! Illo numquam itaque, ipsum aspernatur cupiditate vitae minima ratione placeat harum atque, rerum, impedit vel labore. Dolor minus ipsam, consequatur quae dolorem quibusdam consequuntur voluptatum. Iure repellendus assumenda illo.</p>
+    </div>
+    <!-- cara memanipulasi float -->
+    <div class="ggg">
+        <div class="kiri">1</div>
+        <div class="tengah">2</div>
+        <div class="kanan">3</div>
+    </div>
+</body>
+</html>

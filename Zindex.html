@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+            position:absolute;
+        }
+        /*fungsi z index adalh mengatur dispolay yang non static*/
+        .satu{
+            background-color: orange;
+            z-index:1;
+        }
+        .dua{
+            background-color: greenyellow;
+            top:100px;
+            left:100px;
+            z-index:2;
+        }
+        .tiga{
+            background-color:brown;
+            top:200px;
+            left:200px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- penggunaan z-index -->
+    <div class="satu"></div>
+    <div class="dua"></div>
+    <div class="tiga"></div>
+</body>
+</html>
